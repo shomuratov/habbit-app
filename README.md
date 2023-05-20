@@ -1,3 +1,5 @@
-Антон Ларичев из курса javascript проекта
+Проект из курса javascript
+
+
 - html
 - css
