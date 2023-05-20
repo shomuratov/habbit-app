@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Habbit App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="menu">
+                <div class="panel">
+                    <img class="logo" src="images/logo.svg" alt="Логотип">
+                    <nav class="navigation">
+                        <div class="menu__list">
+                            <button class="menu__item blue">
+                                <img  src="images/gantel.svg" alt="Гантель логотип">
+                            </button>
+                            <button class="menu__item">
+                                <img src="images/Water.svg" alt="Вода логотип">
+                            </button>
+                            <button class="menu__item">
+                                <img src="images/food.svg" alt="Еда логотип">
+                            </button>
+                        </div>
+                        <button class="menu__add">
+                            <img src="images/Add.svg" alt="Добавить превычку">
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="header__menu">
+                <h1 class="">Отжимания</h1>
+                <div class="progress">
+                    <div class="progress__text">
+                        <div class="progress__name">Прогресс</div>
+                        <div class="progress__percent">80%</div>
+                    </div>
+                    <div class="progress__bar">
+                        <div class="progress__cover-bar"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="habbit__menu">
+                <div>
+                    <div class="habbit">
+                        <div class="habbit__day">День 1</div>
+                        <div class="habbit__comment">
+                            Первый подход всегда даётся тяжело
+                        </div>
+                        <div class="habbit__delete">
+                            <img src="images/shape.svg" alt="Иконки удалить">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
