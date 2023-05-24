@@ -1,0 +1,11 @@
+
+                            
+                            <button class="menu__item blue menu__item_active" menu-habbit-id="1">
+                                <img  src="images/gantel.svg" alt="Гантель логотип">
+                            </button>
+                            <button class="menu__item">
+                                <img src="images/Water.svg" alt="Вода логотип">
+                            </button>
+                            <button class="menu__item">
+                                <img src="images/food.svg" alt="Еда логотип">
+                            </button>
