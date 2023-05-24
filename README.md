@@ -1,5 +1,5 @@
-Проект из курса javascript
+Проект из курса Javascript
 
-
-- html
-- css
+- Html
+- Css
+- Javascript
