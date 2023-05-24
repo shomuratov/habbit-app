@@ -136,10 +136,12 @@ body {
 
 .habbit__menu {
     padding-top: 30px;
+
 }
 
 .habbit {
     height: 54px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -155,7 +157,7 @@ body {
 .habbit__day {
     width: 129px;
     height: 100%;
-    padding: 19px 36px;
+    padding: 19px 35px;
     border-radius: 8px 0 0 8px;
     background: #b9a9f9;
     border-right: 1px solid #E7EBFB;
@@ -163,14 +165,31 @@ body {
 
 .habbit__comment {
     padding-left: 20px;
+    line-height: 18px;
 }
 
 .habbit__delete {
     padding-right: 15px;
 }
 
-.input-icon {
+input {
+    width: 521px;
+    height: 39px;
+    background: #FFFFFF;
+    border: 1px solid #E7EBFB;
+    border-radius: 9px;
+}
+
+.input_icon {
     position: absolute;
+}
+
+.button_add {
+    width: 120px;
+    height: 39px;
+    margin-right: 15px;
+    background: #EDECFE;
+    border-radius: 9px;
 }
 
 .habbit__form {
