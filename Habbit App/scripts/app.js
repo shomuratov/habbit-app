@@ -13,6 +13,10 @@ function loadData() {
 }
 
 function saveData () {
-    localStorage.setItem(HABBIT_KEY, JSON.stringify(habbits))
+    localStorage.setItem(HABBIT_KEY, JSON.stringify(habbits));
 
 }
+
+(() => {
+    loadData()
+})()
