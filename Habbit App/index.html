@@ -12,59 +12,32 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="menu">
-                <div class="panel">
-                    <img class="logo" src="images/logo.svg" alt="Логотип">
-                    <nav class="navigation">
-                        <div class="menu__list"></div>
-                        <button class="menu__add">
-                            <img src="images/Add.svg" alt="Добавить превычку">
-                        </button>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <main class="main">
-            <section class="header__menu">
-                <h1 class="">Отжимания</h1>
-                <div class="progress">
-                    <div class="progress__text">
-                        <div class="progress__name">Прогресс</div>
-                        <div class="progress__percent">80%</div>
-                    </div>
-                    <div class="progress__bar">
-                        <div class="progress__cover-bar"></div>
-                    </div>
-                </div>
-            </section>
-            <section class="habbit__menu">
-                <div class="habbit">
-                    <div class="habbit_item">
-                        <div class="habbit__day">День 1</div>
-                        <div class="habbit__comment">
-                            Первый подход всегда даётся тяжело
-                        </div>
-                    </div>
-                    <div class="habbit__delete">
-                        <img src="images/shape.svg" alt="Иконки удалить">
-                    </div>
-                </div>
-                <div class="habbit">
-                    <div class="habbit_item">
-                        <div class="habbit__day">День 2</div>
-                        <div class="habbit__comment">
-                            <input type="text" placeholder="Комментарий">
-                            <!-- <img class="input_icon" src="images/comment.svg" alt="icon"> -->
-                        </div>
-                    </div>
-                    <button class="button_add">
-                        Готово
+        <div class="panel">
+            <img class="logo" src="images/logo.svg" alt="Логотип">
+            <nav class="menu">
+                <div class="menu__list">
+                    <button class="menu__item menu__item_active">
+                        <img src="images/sport.svg" alt="Логотип Спорта">
                     </button>
                 </div>
-            </div>
-            </section>
-        </main>
+                <div class="menu__list">
+                    <button class="menu__item">
+                        <img src="images/Water.svg" alt="Логотип вода">
+                    </button>
+                </div>
+                <div class="menu__list">
+                    <button class="menu__item">
+                        <img src="images/food.svg" alt="Логотип еда">
+                    </button>
+                </div>
+                <button class="menu__add">
+                    <img src="images/Add.svg" alt="логотип превычка">
+                </button>
+            </nav>
+        </div>
+        <div class="content">
+            
+        </div>
     </div>
     <script src="scripts/app.js"></script>
 </body>
