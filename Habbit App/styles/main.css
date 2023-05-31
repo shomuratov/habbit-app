@@ -13,10 +13,11 @@ body {
 }
 
 .wrapper {
+    gap: 50px;
     display: flex;
 }
 
-/* =============== header =============== */
+/* =============== Container panel =============== */
 
 .panel {
     padding: 30px;
@@ -81,4 +82,46 @@ body {
 
 .menu__add:hover {
     background: #e7ebff;
+}
+
+/* =============== Container content =============== */
+
+.content {
+    padding: 45px;
+    min-width: 900px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 33px;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress {
+    min-width: 235px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress__name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.progress__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress__percent {
+    font-size: 12px;
+    line-height: 13px;
+    color: #768396;
 }
