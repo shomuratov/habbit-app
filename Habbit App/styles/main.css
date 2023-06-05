@@ -133,7 +133,6 @@ header {
     position: relative;
     background: #e6e9ed;
     border-radius: 4px;
-
 }
 
 .progress__cover_bar {
@@ -142,9 +141,9 @@ header {
     background: #5051f9;
     border-radius: 4px;
     position: absolute;
-
-
 }
+
+/* =============== Main container =============== */
 
 main {
     padding-top: 30px;   
@@ -174,7 +173,6 @@ main {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-
 }
 
 .habbit__delete {
@@ -191,20 +189,45 @@ main {
     background: #e7ebff;
 }
 
-
 .habbit__form {
     width: 100%;
-    padding: 0px 25px;
+    padding: 0px 10px 0 25px;
+    position: relative;
     gap: 15px;
     display: flex;
 }
 
 .input_icon {
-    padding: 12px 20px;
     flex: 1;
+    padding-left: 40px;
     background: #fff;
     border-radius: 9px;
     border: 1px solid #b9c5f4;
     font-family: 'Comfortaa', sans-serif;
 }
 
+input::placeholder {
+    color: #8899A8;
+}
+
+.input_comment-icon {
+    top: 10px;
+    left: 40px;
+    position: absolute;
+}
+
+.habbit__form button {
+    width: 120px;
+    height: 39px;
+    color: #5051F9;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 9px;
+    font-family: 'Comfortaa', sans-serif;
+    background: #EDECFE;
+}
+
+.habbit__form button:hover {
+    background: #dbdbf8;
+}
