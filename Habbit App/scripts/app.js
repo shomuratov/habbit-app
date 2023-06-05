@@ -6,7 +6,12 @@ const HABBIT_KEY = 'HABBIT_KEY';
 /*  page  */
 
 const page = {
-    menu: document.querySelector('.menu__list')
+    menu: document.querySelector('.menu__list');
+    header: {
+        h1: document.querySelector('.h1'),
+        progressPercent: document.querySelector('.progress__percent'),
+        progressCoverBar: document.querySelector('.progress__cover_bar')
+    }
 }
 
 
@@ -23,13 +28,12 @@ function loadData() {
 
 function saveData () {
     localStorage.setItem(HABBIT_KEY, JSON.stringify(habbits));
-
 }
 
 /*  render */
 
 function renderMenu(activeHabbitId){
-    if (!activeHabbit) {
+    if (!activeHabbitId) {
         return;
     }
     document.querySelector('.menu__list').innerHTML = '';
@@ -39,8 +43,9 @@ function renderMenu(activeHabbitId){
             const element = document.createElement('button');
             element.setAttribute('menu-habbit-id', habbit.id);
             element.classList.add('menu__item');
-            element.innerHTML = `<img  src="images/${habbit.icon}.svg" alt="${habbit.name}">`
-            if (activeHabbit.is === habbit.id) {
+            element.addEventListener('click', () => rerender(habbit.id));
+            element.innerHTML = `<img  src="images/${habbit.icon}.svg" alt="${habbit.name}">`;
+            if (activeHabbit.id === habbit.id) {
                 element.classList.add('menu__item_active');
             }
             page.menu.appendChild(element);
@@ -55,9 +60,22 @@ function renderMenu(activeHabbitId){
     }
 }
 
+function renderHead(activeHabbit) {
+    if (!activeHabbit) {
+        return;
+    }
+    page.header.h1.innerText = activeHabbit.name;
+    const progress = activeHabbit.days.length / activeHabbit.target > 1
+    ? 100
+    : activeHabbit.days.length / activeHabbit.target * 100;
+    page.header.progressPercent.innerText = progress.toFixed(0) + '%';
+    page.header.progressCoverBar.setAttribute('style', `width: ${progress}%`)
+}
+
 function rerender(activeHabbitId) {
     const activeHabbit = habbits.find(habbit => habbit.id === activeHabbitId)
     renderMenu(activeHabbit);
+    renderHead(activeHabbit);
 }
 
 

@@ -136,7 +136,7 @@ header {
 }
 
 .progress__cover_bar {
-    width: 50%;
+    transition: all 0.5s;
     height: 5px;
     background: #5051f9;
     border-radius: 4px;
